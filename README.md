@@ -21,8 +21,22 @@ npm-javascript模块化规范
 图标库
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## React新特性
+1. Context <br/>
+上下文，全局变量<br/>
+提供了一种方式，能够让数据在组件树中传递而不必一级一级手动传递<br/>
+`<Provider>`
+`<Consumer>`
+2. ContentType <br/>
+是Context的语法糖
+3. lazy <br/>
+懒加载组件
+4. Suspense <br/>
+补充懒加载组件时的状态
+5. memo<br/>
+优化渲染性
 
+## Available Scripts
 In the project directory, you can run:
 
 ### `yarn start`
