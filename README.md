@@ -25,8 +25,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 1. Context <br/>
 上下文，全局变量<br/>
 提供了一种方式，能够让数据在组件树中传递而不必一级一级手动传递<br/>
-`<Provider>`
-`<Consumer>`
+`<Provider>`-生产者
+`<Consumer>`-消费者
 2. ContentType <br/>
 是Context的语法糖
 3. lazy <br/>
@@ -35,6 +35,33 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 补充懒加载组件时的状态
 5. memo<br/>
 优化渲染性
+
+## React痛点
+1. 状态逻辑难以复用<br/>
+缺少复用机制<br/>
+渲染属性和高阶组件导致层级冗余
+2. 趋向复杂难以维护<br/>
+生命周期函数混杂不相干逻辑<br/>
+相干逻辑分散再不同生命周期
+3. this指向<br/>
+内联函数过度创建新句柄<br/>
+类成员函数不能保证this
+
+## React Hooks优势
+1. 函数组件无this问题
+2. 自定义Hook方便复用状态逻辑
+3. 副作用的关注点分离(比如绑定事件、网络请求、访问DOM等)
+## 注意事项
+1. eject需要当前git目录全部commit干净<br/>
+初始在`package.json`中有eject命令，执行后消失，为不可逆操作
+
+## hooks
+1. useState
+2. useEffect
+3. useContext
+4. useMemo <br/>
+仅仅为优化代码不应影响业务逻辑
+
 
 ## Available Scripts
 In the project directory, you can run:
