@@ -62,6 +62,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 4. useMemo <br/>
 仅仅为优化代码不应影响业务逻辑
 
+## redux
+1. 单一数据源
+2. 状态不可变
+3. 纯函数修改状态
+
+## redux-action
+1. type 操作类型
+2. payload 操作所需额外的数据 
 
 ## Available Scripts
 In the project directory, you can run:
